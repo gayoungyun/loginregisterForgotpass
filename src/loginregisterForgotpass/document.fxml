@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="526.0" prefWidth="343.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="loginregister.controller.Controller">
+   <children>
+      <StackPane layoutX="-60.0" layoutY="-151.0" prefHeight="150.0" prefWidth="200.0" />
+      <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="511.0" prefWidth="326.0">
+         <children>
+            <FontAwesomeIconView fill="#187778" glyphName="USER" layoutX="142.0" layoutY="89.0" size="5em" />
+            <Label layoutX="99.0" layoutY="107.0" opacity="0.84" text="Sign In Account" textFill="#187778">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxName" layoutX="45.0" layoutY="156.0" prefHeight="30.0" prefWidth="235.0" promptText="User name" styleClass="textfield" stylesheets="@../design/design.css" />
+            <PasswordField layoutX="45.0" layoutY="208.0" prefHeight="22.0" prefWidth="235.0" promptText="Password" stylesheets="@../design/design.css" />
+            <TextField fx:id="fxPwd" layoutX="45.0" layoutY="201.0" prefHeight="30.0" prefWidth="235.0" promptText="password" styleClass="textfield" stylesheets="@../design/design.css" />
+            <CheckBox layoutX="45.0" layoutY="247.0" mnemonicParsing="false" text="Show Password" />
+            <Button layoutX="45.0" layoutY="287.0" mnemonicParsing="false" onAction="#loginFunc" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: green;" stylesheets="@../design/design.css" text="Login" />
+            <Label layoutX="110.0" layoutY="404.0" text="Register Account">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="45.0" layoutY="435.0" mnemonicParsing="false" onAction="#createFunc" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: green;" text="Create Account" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
